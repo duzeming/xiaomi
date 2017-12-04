@@ -2,7 +2,7 @@
 * @Author: lenovo
 * @Date:   2017-11-03 14:57:23
 * @Last Modified by:   lenovo
-* @Last Modified time: 2017-11-17 23:48:26
+* @Last Modified time: 2017-12-04 19:58:05
 */
 *{
 	margin: 0;
@@ -141,7 +141,10 @@ li{
 }
 .bol{
 	width: 100%;
-	height: 100px;
+	height: auto;
+	position: relative;
+	top: 0;
+	left: 0;
 }
 .bol .bol-1{
 	width: 1226px;
@@ -149,6 +152,96 @@ li{
 	/* background-color: #000; */
 	margin: 0 auto;
 }
+.tive{
+	width:100%;
+	height:auto;
+	background-color: #fff;
+	border-top:1px solid rgba(0, 0, 0, 0.1) ;
+	box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+	margin:0 auto;
+	position:absolute;
+	top: 100px;
+	z-index: 99;
+}
+
+.tive .tive1{
+	width: 1226px;
+	height: auto;
+	/*background-color: #FFF;*/
+	margin: 0 auto;
+	/*display: none;*/
+}
+.tive .tive1 .kai{
+	width: 100%;
+	height: 100%;
+	background-color: tan;
+	display: none;
+}
+.kai-active{
+	display: block;
+}
+.tive .tive1 .kai li{
+	width: 180px;
+	height: auto;
+	padding: 35px 12px 0;
+	text-align: center;
+	float: left;
+	box-sizing: border-box;
+	position: relative;
+}
+.tive .tive1 .kai li .top1{
+	width: 160px;
+	height: 110px;
+	/*background-color: red;*/
+	margin-bottom: 16px;
+	border-right: 1px solid #ccc;
+}
+.tive .tive1 .kai li .top1 img{
+	width: 100%;
+	height: 100%;
+}
+.tive .tive1 .kai li .top2{
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+}
+.tive .tive1 .kai li .top2 a{
+	color: #333;
+}
+.tive .tive1 .kai li .top3{
+	line-height: 20px;
+	color: #ff6700;
+	font-size: 12px;
+	text-align: center;
+}
+.tive .tive1 .kai li .top4{
+	width: 30px;
+	height: 18px;
+	padding: 1px 20px;
+	border: 1px solid #ff6700;
+	color: #ff6700;
+	font-size: 12px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .bol .bol-1 .box{
 	width: 55px;
 	height: 55px;
@@ -168,34 +261,39 @@ li{
 .bol .bol-1 .bol-2{
 	width: 700px;
 	height: 100px;
-	/* background-color: red; */
-	/* margin: 0 auto; */
-	/* float: right; */
 	display: block;
 	line-height: 100px;
 	float: left;
-	margin-left: 130px;
+	margin-left: 180px;
+	position: relative;
+	top: 0;
+	left: 0;
 }
-.bol .bol-1 .bol-2 a{
+.bol .bol-1 .bol-2 li{
 	float: left;
-	margin-left: 15px;
+	/* margin-left: 15px; */
 	text-align: center;
 	font-size: 16px;
-/* 	padding: 26px 10px 38px; */
+	padding: 26px 10px 38px;
 	color: #333333;
-	/* margin: 0 auto; */
+	margin: 0 auto;
+	line-height: 60px;
 }
+.bol .bol-1 .bol-2 li:hover{
+	color: #FF0000;
+}
+
+
+
 .bol .bol-1 .bol-3{
-	width: 298px;
+	width: 297px;
 	height: 29px;
 	float: right;
-	/* background-color: red; */
+	background-color: red;
 	margin-top: 23px;
 	
-	
 }
-.bol .bol-1 .bol-3 button{
-	
+.bol .bol-1 .bol-3 button{	
 	width: 52px;
 	height: 50px;
 	border: 1px solid #E0E0E0;
@@ -253,6 +351,7 @@ li{
 	width: 1226px;
 	height: 460px;
 	position: relative;
+	top: 0;
 }
 .bom .bom8{
 	width: 400px;
@@ -318,10 +417,427 @@ li{
 	height:42px;
 	padding-left: 30px;	
 	font-size: 14px;
+	line-height: 42px;
 }
+.bom .bom2 .bom3:hover .soa{
+	display: block;
+}
+
+
+
+.bom .bom2 .bom3 .soa{
+	width: 795px;
+	height: 458px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	position: absolute;
+	top: 0;
+	left: 234px;
+	display: none;
+}
+.bom .bom2 .bom3 .soa .soa1{
+	width: 265px;
+	height: 458px;
+	/* background: red; */
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou1{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou1 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou1 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou1 li:hover{
+	color: #FF9A00;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou2{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou2 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou2 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou2 li:hover{
+	color: #FF9A00;
+}
+
+.bom .bom2 .bom3 .soa .soa1 .sou3{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou3 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou3 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou3 li:hover{
+	color: #FF9A00;
+}
+
+.bom .bom2 .bom3 .soa .soa1 .sou4{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou4 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou4 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou4 li:hover{
+	color: #FF9A00;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou5{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou5 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou5 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou5 li:hover{
+	color: #FF9A00;
+}
+
+.bom .bom2 .bom3 .soa .soa1 .sou6{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou6 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou6 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa1 .sou6 li:hover{
+	color: #FF9A00;
+}
+
+.bom .bom2 .bom3 .soa .soa2{
+	width: 265px;
+	height: 458px;
+	/* background: red; */
+	float: left;
+}
+
+.bom .bom2 .bom3 .soa .soa2 .sou1{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou1 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou1 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou1 li:hover{
+	color: #FF6709;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou2{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou2 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou2 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou2 li:hover{
+	color: #FF6709;
+}
+
+.bom .bom2 .bom3 .soa .soa2 .sou3{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou3 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou3 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou3 li:hover{
+	color: #FF6709;
+}
+
+.bom .bom2 .bom3 .soa .soa2 .sou4{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou4 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou4 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou4 li:hover{
+	color: #FF6709;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou5{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou5 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou5 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou5 li:hover{
+	color: #FF6709;
+}
+
+.bom .bom2 .bom3 .soa .soa2 .sou6{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou6 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou6 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa2 .sou6 li:hover{
+	color: #FF6709;
+}
+
+
+
+
+
+
+
+
+.bom .bom2 .bom3 .soa .soa3{
+	width: 265px;
+	height: 458px;
+	/* background: red; */
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou1{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou1 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou1 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou1 li:hover{
+	color: #FF6709;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou2{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou2 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou2 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou2 li:hover{
+	color: #FF6709;
+}
+
+.bom .bom2 .bom3 .soa .soa3 .sou3{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou3 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou3 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou3 li:hover{
+	color: #FF6709;
+}
+
+.bom .bom2 .bom3 .soa .soa3 .sou4{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou4 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou4 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou4 li:hover{
+	color: #FF6709;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou5{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou5 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou5 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou5 li:hover{
+	color: #FF6709;
+}
+
+.bom .bom2 .bom3 .soa .soa3 .sou6{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou6 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou6 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soa .soa3 .sou6 li:hover{
+	color: #FF6709;
+}
+
 .bom .bom2 .bom3:hover{
-	background-color: #5C5C5C;
+	background-color: #FF6700;
 }
+
+
 .bom .bom2 .bom3 a{
 	display: block;
 	text-decoration: none;
@@ -332,9 +848,451 @@ li{
 	font-size: 16px;
 	color: rgba(255, 255, 255, 0.5);
 	display: block;
-	margin-top: -17px;
+	margin-top: -40px;
 	margin-left: 160px;
+	/* line-height: 42px; */
 }
+
+
+.bom .bom2 .bom3 .sow{
+	width: 265px;
+	height: 458px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	position: absolute;
+	top: 0;
+	left: 234px;
+	display: none;
+}
+.bom .bom2 .bom3:hover .sow{
+	display: block;
+}
+.bom .bom2 .bom3 .sow .soa1{
+	width: 265px;
+	height: 458px;
+	/* background: red; */
+	float: left;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou1{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou1 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou1 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou1 li:hover{
+	color: #FF9A00;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou2{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou2 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou2 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou2 li:hover{
+	color: #FF9A00;
+}
+
+.bom .bom2 .bom3 .sow .soa1 .sou3{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou3 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou3 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou3 li:hover{
+	color: #FF9A00;
+}
+
+.bom .bom2 .bom3 .sow .soa1 .sou4{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou4 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou4 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou4 li:hover{
+	color: #FF9A00;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou5{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou5 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou5 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou5 li:hover{
+	color: #FF9A00;
+}
+
+.bom .bom2 .bom3 .sow .soa1 .sou6{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou6 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou6 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .sow .soa1 .sou6 li:hover{
+	color: #FF9A00;
+}
+
+
+.bom .bom2 .bom3 .soe{
+	width: 530px;
+	height: 458px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	position: absolute;
+	top: 0;
+	left: 234px;
+	display: none;
+}
+.bom .bom2 .bom3:hover .soe{
+	display: block;
+}
+
+.bom .bom2 .bom3 .soe .soa1{
+	width: 265px;
+	height: 458px;
+	/* background: red; */
+	float: left;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou1{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou1 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou1 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou1 li:hover{
+	color: #FF9A00;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou2{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou2 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou2 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou2 li:hover{
+	color: #FF9A00;
+}
+
+.bom .bom2 .bom3 .soe .soa1 .sou3{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou3 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou3 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou3 li:hover{
+	color: #FF9A00;
+}
+
+.bom .bom2 .bom3 .soe .soa1 .sou4{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou4 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou4 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou4 li:hover{
+	color: #FF9A00;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou5{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou5 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou5 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou5 li:hover{
+	color: #FF9A00;
+}
+
+.bom .bom2 .bom3 .soe .soa1 .sou6{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou6 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou6 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soe .soa1 .sou6 li:hover{
+	color: #FF9A00;
+}
+
+.bom .bom2 .bom3 .soe .soa2{
+	width: 265px;
+	height: 458px;
+	/* background: red; */
+	float: left;
+}
+
+.bom .bom2 .bom3 .soe .soa2 .sou1{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou1 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou1 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou1 li:hover{
+	color: #FF6709;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou2{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou2 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou2 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou2 li:hover{
+	color: #FF6709;
+}
+
+.bom .bom2 .bom3 .soe .soa2 .sou3{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou3 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou3 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou3 li:hover{
+	color: #FF6709;
+}
+
+.bom .bom2 .bom3 .soe .soa2 .sou4{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou4 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou4 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou4 li:hover{
+	color: #FF6709;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou5{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou5 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou5 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou5 li:hover{
+	color: #FF6709;
+}
+
+.bom .bom2 .bom3 .soe .soa2 .sou6{
+	/* width: 265px; */
+	height: 40px;
+	/* background-color: tan; */
+	padding: 18px 20px;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou6 img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou6 li{
+	font-size: 18px;
+	float: left;
+	line-height: 40px;
+	color: #333;
+}
+.bom .bom2 .bom3 .soe .soa2 .sou6 li:hover{
+	color: #FF6709;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .bor{
 	width: 1226px;
 	height: 170px;
@@ -569,7 +1527,7 @@ li{
 	float: right;
 }
 .pou{
-	width: auto;
+	width: 100%;
 	height: 5408px;
 	background-color: #F5F5F5;
 }
@@ -722,6 +1680,10 @@ li{
 	transition: all .5s;
 	float: right;
 }
+.pou .top .tod img{
+    width: 60px;
+    height: 100px;
+}
 .pou .top .tod:hover{
 	transform: translateY(-5px);
 	box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
@@ -769,15 +1731,18 @@ li{
 	margin: 0 auto;
 }
 .pou .boz ul{
-	width: 3678px;
+	width: 1226px;
 	height: 340px;
 }
-.pou .boz ul li{
+.pou .boz li{
 	width: 234px;
 	height: 300px;
 	background-color: #fff;
 	float: left;
-	margin-right: 14px;
+	margin-right: 11px;
+}
+.pou .boz li:nth-child(4){
+	float: right;
 }
 .pou .boz .boz1{
 	width: 234px;
@@ -916,7 +1881,7 @@ li{
     color: #333;
 }
 .pou .dho{
-	width: 1240px;
+	width: 1226px;
 	height: 420px;
 	/* background-color: #000; */
 	margin: 0 auto;
@@ -924,19 +1889,16 @@ li{
 .pou .dho .dor{
 	width: 296px;
 	height: 374px;
-	margin: 0 12px 12px 0;
+	margin: 0 9px 12px 0;
 	border-top: 1px solid #ffac13;
 	padding-top: 45px;
 	background-color: #fff;
-	float: left;
+	float: right;
 	transition: all .2s linear;
 	position: relative;
 	top: 0;
 	left: 0;
 }
-
-
-
 
 
 
@@ -1034,7 +1996,7 @@ li{
 	overflow: hidden;
 }
 .pou .dho .dor .dor1 ul{
-	width: 888px;
+	width: 88px;
 	height: 340px;
 }
 .pou .dho .dor .dor1 .lro a{
@@ -1132,19 +2094,22 @@ li{
 	color: #FF9954;
 }
 .pou .muo{
-	width: 1240px;
+	width: 1226px;
 	height: 285px;
 	/* background-color: #000; */
 	margin: 0 auto; 
 }
 .pou .muo .mou1{
-	width: 296px;
+	width: 295px;
 	height: 285px;
 	background-color: #fff;
 	margin-bottom: 14px;
-	margin-right: 14px;
+	margin-right: 11px;
 	float: left;
 	transition: all .2s linear;
+}
+.pou .muo .mou1:nth-child(4){
+	float: right;
 }
 .pou .muo .mou1:hover{
 	transform: translateY(-5px);
@@ -1195,7 +2160,7 @@ li{
 	margin-top: 12px;	
 }
 .ndd{
-	width: 1349px;
+	width: 100%;
 	height: 272px;
 	/* background-color: #000; */
 	margin: 0 auto;
@@ -1311,7 +2276,7 @@ li{
 	background-color: #ff6700;
 }
 .baibai{
-	width: 1349px;
+	width: 1226px;
 	height: 106px;
 	padding: 30px 0;
 	margin: 0 auto;
